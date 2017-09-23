@@ -11,39 +11,39 @@ function load_checks()
 	//console.log(humidity);
 	if(distress<21)
 	{
-		document.getElementById("hum_text").innerHTML="No distress";
+		document.getElementById("hum_text").innerHTML="Κανένα πρόβλημα";
 	}
 	else if(distress>=21 && distress<24)
 	{
 		//console.log(humidity);
-		document.getElementById("hum_text").innerHTML="> 50% of population feels distress";
+		document.getElementById("hum_text").innerHTML="> 50% του πληθυσμού αισθάνεται δυσφορία";
 	}
 	else if(distress>=24 && distress<27)
 	{
 		//console.log(humidity);
-		document.getElementById("hum_text").innerHTML="< 50% of population feels distress";
+		document.getElementById("hum_text").innerHTML="< 50% του πληθυσμού αισθάνεται δυσφορία";
 	}
 	else if(distress>=27 && distress<29)
 	{
 		//console.log(humidity);
-		document.getElementById("hum_text").innerHTML="The major part of population feels distress";
+		document.getElementById("hum_text").innerHTML="Το μεγαλύτερο μέρος του πληθυσμού αισθάνεται δυσφορία";
 	}
 	else if(distress>=29 && distress<32)
 	{
 		//console.log(humidity);
-		document.getElementById("hum_text").innerHTML="Everyone feels distress";
+		document.getElementById("hum_text").innerHTML="Όλοι αισθάνονται δυσφορία";
 	}
 	else if(distress>=32)
 	{
-		document.getElementById("hum_text").innerHTML="Increased awareness in hospitals ";	
+		document.getElementById("hum_text").innerHTML="Αυξημένη ευαισθητοποίηση στα νοσοκομεία";	
 	}
 	if(humidity>=85)		
 	{
 		//console.log(humidity);
-		document.getElementById("temp_text").innerHTML="The humidity is not recommmended for astro-observation";
+		document.getElementById("temp_text").innerHTML="Η υγρασία δεν συνιστάται για αστροπαρατήρηση";
 	}
 	else
 	{
-		document.getElementById("temp_text").innerHTML="The sky is clear, you can have some astro-observation tonight";
+		document.getElementById("temp_text").innerHTML="Ο ουρανός είναι καθαρός, μπορείτε να κανέτε αστρο-παρατήρηση απόψε";
 	}
 }
