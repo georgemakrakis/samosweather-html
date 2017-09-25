@@ -7,6 +7,7 @@ function load_checks()
 	humidity=humidity.substring(0,2);
 	temperature=temperature.substring(0,2);
 	//DI = Tα – 0,55 (1 – 0,01 RH) (Tα – 14,5) 
+	//These checks are taken from http://www.airlab.edu.gr/index.php?option=com_content&view=article&id=73&Itemid=107&lang=en
 	var distress=temperature-0.55*(1-0.01*humidity)*(temperature-14.5);
 	//console.log(humidity);
 	if(distress<21)
