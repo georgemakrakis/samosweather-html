@@ -9,6 +9,8 @@ function load_checks()
 	//DI = Tα – 0,55 (1 – 0,01 RH) (Tα – 14,5) 
 	//These checks are taken from http://www.airlab.edu.gr/index.php?option=com_content&view=article&id=73&Itemid=107&lang=en
 	var distress=temperature-0.55*(1-0.01*humidity)*(temperature-14.5);
+
+	var date=new Date();
 	//console.log(humidity);
 	if(distress<21)
 	{
@@ -47,4 +49,5 @@ function load_checks()
 	{
 		document.getElementById("temp_text").innerHTML="Ο ουρανός είναι καθαρός, μπορείτε να κανέτε αστρο-παρατήρηση απόψε";
 	}
+	document.getElementById("time").innerHTML=date.getUTCHours()+':'+date.getUTCMinutes()+':'+date.getUTCSeconds()+' Τοπική Ώρα';
 }
